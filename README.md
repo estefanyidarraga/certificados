@@ -1,12 +1,24 @@
 # Certificados para un Evento
 
-Lee la lista de participantes de un evento (`participantes.csv`) y genera **un certificado personalizado para cada persona** en segundos. Al final abre en el navegador una página con todos los certificados.
+## Descripción del proyecto 
 
-> Este README es el punto de partida. Mejorarlo es uno de los issues del equipo.
+Este proyecto permite generar de manera rápida certificados personalizados para los participantes de un evento, además de facilitar su descarga.
 
-## Cómo usarlo
+## Objetivo
 
-Solo necesitas Python. No hay que instalar nada, ni crear un entorno virtual.
+Facilitar la creación de certificados y reducir el trabajo manual.
+
+## Requisitos
+
+* Tener Python instalado.
+* Contar con los archivos del proyecto.
+
+## ¿Cómo ejecutar el proyecto?
+
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Abrir una terminal dentro de la carpeta.
+4. Ejecutar el siguiente comando:
 
 ```
 python generar_certificados.py
@@ -18,13 +30,11 @@ Los certificados quedan en la carpeta `certificados`. Para imprimir uno o guarda
 
 ## Los tres archivos del proyecto
 
-| Archivo | Qué es | Quién lo cambia |
-|---|---|---|
-| `participantes.csv` | La lista de personas: nombre, rol, equipo y proyecto. Se abre en Excel | Los organizadores del evento |
-| `plantilla.html` | El diseño del certificado. Las palabras entre `{{ }}` se reemplazan por los datos de cada persona | El diseñador |
-| `generar_certificados.py` | El programa que junta los dos y crea los certificados | El programador |
-
-Así trabajan las automatizaciones reales: **los datos, el diseño y el código van separados**. Se puede cambiar la lista o el diseño sin tocar el código.
+| Archivo | Descripción | 
+|---|---|
+| `participantes.csv` | Contiene los nombres, roles, equipos y proyectos de los participantes.| 
+| `plantilla.html` | El diseño del certificado. Las palabras entre `{{ }}` se reemplazan por los datos de cada persona | 
+| `generar_certificados.py` | Contiene el código encargado de generar los certificados.| 
 
 ## Lo que vas a aprender con este script
 
@@ -47,3 +57,10 @@ Así trabajan las automatizaciones reales: **los datos, el diseño y el código 
 4. **`llenar_plantilla()`**: reemplaza cada `{{campo}}` por el dato de la persona.
 5. **`generar()`**: lee el CSV, crea un certificado por persona y la página índice, y mide cuánto se demoró.
 6. **`if __name__ == "__main__":`**: lo que se ejecuta cuando corres `python generar_certificados.py`.
+
+## Captura de los certificados
+![certificado](certificado.png)
+
+## Integrantes del equipo
+* Estefany Idárraga Pérez
+* Julio César Sotelo Lugo
