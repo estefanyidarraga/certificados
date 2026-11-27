@@ -1,8 +1,7 @@
-# Certificados para un Evento
-
+# Certificados para ADSO CodeFest 2026
 ## Descripción del proyecto 
 
-Este proyecto permite generar de manera rápida certificados personalizados para los participantes de un evento, además de facilitar su descarga.
+Este proyecto ayuda a  generar de manera rápida certificados personalizados para los participantes del evento ADSO CodeFest 2026, además de facilitar su descarga.
 
 ## Objetivo
 
